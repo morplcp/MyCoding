@@ -1,0 +1,10 @@
+
+// 导入
+#import "LCPGetRongCloudToken.h"
+// 获取token示例：appkey是你在融云上注册的应用有一个appkey，在appkey下面有密钥 appsecret
+LCPGetRongCloudToken *token = [[LCPGetRongCloudToken alloc] init];
+    token.app_key = @"your appkey";
+    token.appSecret = @"your appSecret";
+    [token getTokenWithUserId:@"1" Name:@"试试" PortraitUri:@"" CallBack:^(id token) {
+    NSLog(@"%@",token);
+}];

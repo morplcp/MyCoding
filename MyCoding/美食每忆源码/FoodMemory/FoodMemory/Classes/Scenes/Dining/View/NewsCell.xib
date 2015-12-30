@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9059" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="identCell" rowHeight="110" id="KGk-i7-Jjw" customClass="NewsCell">
+            <rect key="frame" x="0.0" y="0.0" width="405" height="110"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="405" height="109"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bRB-bB-dR8">
+                        <rect key="frame" x="8" y="8" width="288" height="93"/>
+                        <animations/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="bqu-hy-Vng">
+                        <rect key="frame" x="304" y="8" width="93" height="93"/>
+                        <animations/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="93" id="c6g-Gl-zmU"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <animations/>
+                <constraints>
+                    <constraint firstItem="bRB-bB-dR8" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="ABY-s9-qBO"/>
+                    <constraint firstAttribute="bottom" secondItem="bqu-hy-Vng" secondAttribute="bottom" constant="8" id="Q2Z-Pm-Ot2"/>
+                    <constraint firstAttribute="bottom" secondItem="bRB-bB-dR8" secondAttribute="bottom" constant="8" id="ZZs-3V-TaP"/>
+                    <constraint firstItem="bqu-hy-Vng" firstAttribute="leading" secondItem="bRB-bB-dR8" secondAttribute="trailing" constant="8" id="baW-eL-l4l"/>
+                    <constraint firstItem="bqu-hy-Vng" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="bo5-IV-nYX"/>
+                    <constraint firstItem="bRB-bB-dR8" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="cDU-Xm-a9b"/>
+                    <constraint firstAttribute="trailing" secondItem="bqu-hy-Vng" secondAttribute="trailing" constant="8" id="ieJ-bW-Af8"/>
+                </constraints>
+            </tableViewCellContentView>
+            <animations/>
+            <connections>
+                <outlet property="imgview" destination="bqu-hy-Vng" id="e0n-dQ-xA8"/>
+                <outlet property="lab4title" destination="bRB-bB-dR8" id="BNF-Gj-EcD"/>
+            </connections>
+            <point key="canvasLocation" x="530.5" y="357"/>
+        </tableViewCell>
+    </objects>
+</document>

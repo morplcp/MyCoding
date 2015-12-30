@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9059" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="showCell" id="gTV-IL-0wX" customClass="ShowImageViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="L0r-jo-6cH">
+                        <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                        <animations/>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sRX-9n-Hxc">
+                        <rect key="frame" x="80" y="80" width="20" height="20"/>
+                        <animations/>
+                        <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="20" id="6PR-bh-thw"/>
+                            <constraint firstAttribute="width" secondItem="sRX-9n-Hxc" secondAttribute="height" multiplier="1:1" id="dGG-X5-e6m"/>
+                        </constraints>
+                        <state key="normal" title="x">
+                            <color key="titleColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                        </state>
+                        <connections>
+                            <action selector="actionClose:" destination="gTV-IL-0wX" eventType="touchUpInside" id="Frh-Jr-2Ki"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <animations/>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <animations/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="sRX-9n-Hxc" secondAttribute="bottom" id="6NV-eE-L9S"/>
+                <constraint firstItem="L0r-jo-6cH" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="FVV-BJ-ljz"/>
+                <constraint firstAttribute="trailing" secondItem="L0r-jo-6cH" secondAttribute="trailing" id="FkN-Uf-e11"/>
+                <constraint firstAttribute="bottom" secondItem="L0r-jo-6cH" secondAttribute="bottom" id="WGP-YF-sPE"/>
+                <constraint firstItem="L0r-jo-6cH" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="bfv-lp-1US"/>
+                <constraint firstAttribute="trailing" secondItem="sRX-9n-Hxc" secondAttribute="trailing" id="vdf-PK-V76"/>
+            </constraints>
+            <size key="customSize" width="100" height="100"/>
+            <connections>
+                <outlet property="imgView" destination="L0r-jo-6cH" id="cgf-Ml-yno"/>
+            </connections>
+            <point key="canvasLocation" x="106" y="227"/>
+        </collectionViewCell>
+    </objects>
+</document>

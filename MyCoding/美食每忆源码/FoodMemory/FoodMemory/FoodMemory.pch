@@ -1,0 +1,22 @@
+//
+//  FoodMemory.pch
+//  FoodMemory
+//
+//  Created by morplcp on 15/12/2.
+//  Copyright © 2015年 morplcp. All rights reserved.
+//
+
+#import <AVOSCloud/AVOSCloud.h>
+#import "GlobalReference.h"
+#import "URLDefines.h"
+#import "LCPNetWorking.h"
+#import "MJRefresh.h"
+#import "NSTimer+MyTimer.h"
+#import "LeanCloudDBHelper.h"
+#import "UIViewController+AlertMsg.h"
+#import "UIImageView+WebCache.h"
+#import "LCPSpinnerView.h"
+#import <BaiduMapAPI_Base/BMKBaseComponent.h>//引入base相关所有的头文件
+#import <BaiduMapAPI_Map/BMKMapComponent.h>//引入地图功能所有的头文件
+#import <BaiduMapAPI_Search/BMKSearchComponent.h>//引入检索功能所有的头文件
+#import <BaiduMapAPI_Location/BMKLocationComponent.h>//引入定位功能所有的头文件
