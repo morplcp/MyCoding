@@ -1,6 +1,5 @@
 # MyCoding
-## 代码总结。
-###包括：
+
 >CPBanner:无限滚动轮播图
 
 >CPNetWorking:网络数据解析
